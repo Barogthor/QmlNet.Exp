@@ -9,7 +9,7 @@ ApplicationWindow {
     width: 1024
     height: 768
     title: qsTr("Hello World")
-
+    
     Material.theme: Material.Light
     Material.accent: '#41cd52'
     Material.primary: '#41cd52'
@@ -69,9 +69,6 @@ ApplicationWindow {
         TabButton {
             text: qsTr("Upgrade")
         }
-        TabButton {
-            text: qsTr("Conquest")
-        }
     }
 
     StackLayout {
@@ -82,25 +79,21 @@ ApplicationWindow {
         
         Item {
             id: townTab
-            Town{}
+            TownView{}
         }
         Item {
             id: unitTab
-            Unit{}
+            UnitView{}
         }
         Item {
             id: buildingTab
-            Building{}    
+            BuildingView{}    
         }
         Item {
             id: upgradeTab
-            Upgrade{}
+            UpgradeView{}
         }
         
-        Item {
-            id: conquestTab
-            Conquest{}
-        }
     }
 
 
