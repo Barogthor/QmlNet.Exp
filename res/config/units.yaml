@@ -1,0 +1,29 @@
+units:
+    paysan: &paysan
+        creationTime: 1
+        name: "Paysan"
+        goldCost: 2
+        woodCost: 0
+        links: 
+            - *scierie
+            - *maison
+            - *fonderie
+            - *mine
+            - *bucheron
+            - *caserne
+    fantassin: &fantassin
+        creationTime: 3
+        name: "Fantassin"
+        goldCost: 7
+        woodCost: 1
+    fusilier: &fusilier
+        creationTime: 4 
+        name: "Fusilier"
+        goldCost: 10
+        woodCost: 3
+    chevalier: &chevalier
+        creationTime: 7
+        name: "Chevalier"
+        goldCost: 15
+        woodCost: 5
+    

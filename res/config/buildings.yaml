@@ -1,0 +1,36 @@
+buildings:
+    bucheron: &bucheron
+        creationTime: 3
+        name: "Bucheron"
+        goldCost: 7
+        woodCost: 0
+    mine: &mine
+        creationTime: 4
+        name: "Mine"
+        goldCost: 10
+        woodCost: 3
+    maison: &maison
+        creationTime: 2
+        name: "Maison"
+        goldCost: 5
+        woodCost: 2
+    fonderie: &fonderie
+        creationTime: 10
+        name: "Fonderie"
+        goldCost: 20
+        woodCost: 10
+    scierie: &scierie
+        creationTime: 3
+        name: "Scierie"
+        goldCost: 20
+        woodCost: 10
+    caserne: &caserne
+        creationTime: 10
+        name: "Caserne"
+        goldCost: 15
+        woodCost: 10
+        links:
+            - *fantassin
+            - *fusilier
+            - *chevalier
+            
